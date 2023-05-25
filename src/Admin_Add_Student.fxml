@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_project.Admin_Add_StudentController">
+   <children>
+      <Label layoutX="241.0" layoutY="39.0" prefHeight="31.0" prefWidth="115.0" text="Add Student" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="103.0" prefHeight="31.0" prefWidth="136.0" text="Academic_number" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="154.0" prefHeight="31.0" prefWidth="115.0" text="username" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="201.0" prefHeight="31.0" prefWidth="115.0" text="password" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="student_academic_number" layoutX="200.0" layoutY="106.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField fx:id="student_username" layoutX="200.0" layoutY="157.0" prefHeight="31.0" prefWidth="149.0" />
+      <TextField fx:id="student_password" layoutX="200.0" layoutY="204.0" prefHeight="31.0" prefWidth="149.0" />
+      <Button fx:id="add_student_button" layoutX="446.0" layoutY="80.0" mnemonicParsing="false" onAction="#insert_data" prefHeight="46.0" prefWidth="136.0" text="ADD">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear_student_button" layoutX="446.0" layoutY="146.0" mnemonicParsing="false" onAction="#clear" prefHeight="46.0" prefWidth="136.0" text="Clear">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="student_table" layoutX="41.0" layoutY="266.0" prefHeight="239.0" prefWidth="297.0">
+        <columns>
+          <TableColumn fx:id="student_id_col" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="student_name_col" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="student_password_col" prefWidth="75.0" text="password" />
+        </columns>
+      </TableView>
+      <Button fx:id="back_student_button" layoutX="446.0" layoutY="210.0" mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="136.0" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_project.Admin_Add_DepartmentController">
+   <children>
+      <Label layoutX="48.0" layoutY="85.0" text="Department_id">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="146.0" text="Department_name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="department_id_textfield" layoutX="218.0" layoutY="82.0" prefHeight="32.0" prefWidth="157.0" />
+      <TextField fx:id="department_name_textfield" layoutX="218.0" layoutY="143.0" prefHeight="32.0" prefWidth="157.0" />
+      <Button fx:id="add_department_button" layoutX="436.0" layoutY="76.0" mnemonicParsing="false" onAction="#insert_data" prefHeight="44.0" prefWidth="131.0" text="Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear_department_button" layoutX="436.0" layoutY="146.0" mnemonicParsing="false" onAction="#clear" prefHeight="44.0" prefWidth="131.0" text="Clear">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="233.0" layoutY="24.0" text="Add Department">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="65.0" layoutY="240.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_name" prefWidth="75.0" text="name" />
+        </columns>
+      </TableView>
+      <Button fx:id="back_department_button" layoutX="436.0" layoutY="221.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="131.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

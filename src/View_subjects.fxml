@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_project.View_SubjectsController">
+    <children>
+        <Label contentDisplay="CENTER" layoutX="204.0" layoutY="40.0" prefHeight="16.0" prefWidth="97.0" text="Subjects" textAlignment="CENTER" />
+        <TableView fx:id="table" layoutX="77.0" layoutY="91.0" prefHeight="218.0" prefWidth="336.0">
+            <columns>
+                <TableColumn fx:id="name_col" prefWidth="185.0" text="name" />
+            <TableColumn fx:id="file_col" prefWidth="150.0" text="file" />
+            </columns>
+        </TableView>
+        <Button fx:id="back" layoutX="187.0" layoutY="324.0" mnemonicParsing="false" onAction="#back" prefHeight="24.0" prefWidth="117.0" text="back" />
+    </children>
+</AnchorPane>

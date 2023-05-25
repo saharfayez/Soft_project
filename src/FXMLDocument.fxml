@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" opacity="0.92" prefHeight="573.0" prefWidth="710.0" style="-fx-background-color: #e7e7e7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_project.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="430.0" prefWidth="279.0">
+         <children>
+            <Label layoutX="176.0" layoutY="370.0" text="User Name" textFill="#083f72">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="combo" layoutX="280.0" layoutY="326.0" prefWidth="150.0" />
+      <Button fx:id="btn" layoutX="233.0" layoutY="483.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="229.0" text="Login" textFill="#14254a">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1" layoutX="300.0" layoutY="287.0" prefHeight="25.0" prefWidth="111.0" text="Select User" textFill="#083f72">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="273.0" layoutY="365.0" prefHeight="36.0" prefWidth="168.0" />
+      <PasswordField fx:id="t2" layoutX="273.0" layoutY="425.0" prefHeight="36.0" prefWidth="168.0" />
+      <Label layoutX="191.0" prefHeight="66.0" prefWidth="349.0" text="College Management System" textFill="#083f72">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="219.0" fitWidth="484.0" layoutX="105.0" layoutY="58.0" opacity="0.95">
+         <image>
+            <Image url="@3.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="182.0" layoutY="433.0" text="Password" textFill="#083f72">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

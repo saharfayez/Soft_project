@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="572.0" prefWidth="1019.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_project.Add_SubjectController">
+    <children>
+        <Label layoutX="241.0" layoutY="39.0" prefHeight="31.0" prefWidth="172.0" text="Add Subject" textAlignment="CENTER">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="103.0" prefHeight="31.0" prefWidth="192.0" text="Subject_code" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="154.0" prefHeight="31.0" prefWidth="149.0" text="Subject_name" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="201.0" prefHeight="31.0" prefWidth="115.0" text="Department" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="code" layoutX="221.0" layoutY="106.0" prefHeight="31.0" prefWidth="192.0" />
+        <TextField fx:id="name" layoutX="221.0" layoutY="157.0" prefHeight="31.0" prefWidth="192.0" />
+        <Button fx:id="add" layoutX="502.0" layoutY="80.0" mnemonicParsing="false" onAction="#insertSubject" prefHeight="46.0" prefWidth="136.0" text="ADD">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+      
+        <Button fx:id="clear" layoutX="502.0" layoutY="224.0" mnemonicParsing="false" onAction="#clear" prefHeight="46.0" prefWidth="136.0" text="Clear">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <TableView fx:id="table" layoutX="691.0" layoutY="172.0" prefHeight="239.0" prefWidth="297.0">
+            <columns>
+                <TableColumn fx:id="code_col" prefWidth="175.0" text="code" />
+                <TableColumn fx:id="name_col" prefWidth="121.0" text="name" />
+            </columns>
+        </TableView>
+        <Button fx:id="back" layoutX="502.0" layoutY="296.0" mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="136.0" text="Back">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="38.0" layoutY="260.0" prefHeight="31.0" prefWidth="115.0" text="prerequists" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="227.0" layoutY="247.0" minHeight="0.0" minWidth="0.0" prefHeight="144.0" prefWidth="200.0">
+            <children>
+                <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                    <content>
+                        <VBox fx:id="subjects" prefHeight="200.0" prefWidth="182.0" />
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+      <ComboBox fx:id="departments" layoutX="221.0" layoutY="208.0" prefHeight="24.0" prefWidth="192.0" />
+      <Button fx:id="delete" layoutX="502.0" layoutY="150.0" mnemonicParsing="false" onAction="#delete" prefHeight="46.0" prefWidth="136.0" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

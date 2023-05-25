@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_project.Soft_studentController">
+   <children>
+      <AnchorPane layoutX="175.0" layoutY="121.0" minHeight="0.0" minWidth="0.0" prefHeight="144.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="assign" layoutX="31.0" layoutY="-15.0" mnemonicParsing="false" onAction="#assign" prefHeight="46.0" prefWidth="188.0" text="Assign Subjects">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="view" layoutX="31.0" layoutY="56.0" mnemonicParsing="false" onAction="#view" prefHeight="46.0" prefWidth="188.0" text="View Subjects">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="back" layoutX="222.0" layoutY="251.0" mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="156.0" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
